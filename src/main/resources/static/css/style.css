@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{ display: none; }
+  .navbar .nav-item:hover .nav-link{   }
+  .navbar .nav-item:hover .dropdown-menu{ display: block; }
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+}
+
+
+
+
+
+
+
+
+  table, th, td {
+  border:0px solid black;
+}
+   
+   body
+   {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.container-fluid{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 2cm;
+}
+
+@media (min-width: auto)
+.container {
+    max-width: auto;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2cm;
+}
+
+body {
+  background-image: url('/image/mainak2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-color: black;
+    }
+  
+  h4{
+  font-size: 50px;
+  background-color: #FF6F17;
+  color: white;
+  }
+
+
+
+  
+}

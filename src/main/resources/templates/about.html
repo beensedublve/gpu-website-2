@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+  <title>About Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--denna text under gör så att själva hover drop boxens funkar-->
+
+  <style>@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{ display: none; }
+
+  .navbar .nav-item:hover .dropdown-menu{ display: block; }
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+}
+
+
+
+  table, th, td {
+  border:0px solid black;
+}
+   
+   body
+   {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.container-fluid{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2cm;
+}
+
+
+.container {
+    max-width: 960px;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 2cm;
+}
+
+body {
+  background-image: url('/image/wp10.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+h3{
+  color: white;
+}
+
+h1{
+  color: white;
+  font-family: initial;
+}
+
+ h4{
+  font-size: 50px;
+  background-color: #35c92a;
+  color: white;
+  }
+
+ </style>
+
+
+  </head>
+
+
+<!-- ---------------------övre text och "nav bar" delen-----#35c92a------------------- -->
+
+
+<body style="background-color: #E000FF;">
+ 
+<div style="background-color: #FF3838 ; padding: 0px; border: 0px solid green; padding-left: 0px; margin-right: -50px;">
+
+
+
+
+
+<table style="width:63%; color: white; font-size: 35px; margin-bottom: 3px; margin-left: 20px;">
+  <tr>
+    <td>GeForce RTX</td>
+   
+ 
+  </tr>
+</table>
+
+  </div>
+
+
+
+
+  <!-- main part of page where we call it home -->
+
+
+
+<div class="container fluid" >
+
+<img class="d-block w-100" src="/image/abouttxt1.png" alt="Second slide">
+
+<img class="d-block w-50" src="/image/abouttxt2.png" alt="Second slide">
+
+<img style="margin-left: 100px" class="d-block w-50" src="/image/abouttxt3.png" alt="Second slide">
+
+
+</div>
+
+
+
+<!-- <div class="container fluid" > -->
+<!--   <h1 style="margin-left: 5px; background-color: black">About Us Page</h1> -->
+
+<!--     <h1 style="margin-left: 5px; background-color: black">What is the purpose of this page?</h1> -->
+
+<!--      <h1 style="margin-left: 5px; background-color: black">how do you contact us?</h1> -->
+<!-- </div> -->
+
+<!--   <div class="container fluid" style="background-color: black"> -->
+<!-- <h3 style="margin-left: 50px;">I am very into pc gaming and pc building with parts and such, especially  -->
+<!-- gpu's.</h3> -->
+<!-- <br> -->
+
+<!-- <h3 style="margin-left: 50px;">This page is the result of a task given to us by MOIB and serves as an example of my web creating capabilities and to illuminate small areas of the different gpus</h3> -->
+<!-- <br> -->
+
+<!-- <h3 style="margin-left: 50px;">you can contact us by emailing to "SeraphFrameNynashamn@gmail.com" for further questions and business inquires</h3> -->
+<!-- <br> -->
+<!-- </div> -->
+
+
+
+   
+
+
+
+
+    <div class="container fluid">
+    <h3 class="text-ming" style="background-color: black" >The contents of this website is protected by fair use and copyrights <br> Website created using Sublime. <br> Powered by Bootstrap</h3>
+  <footer style="background-color: black;" class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <svg class="bi me-2"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <h4 >&copy; 2023</h4>
+
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3" style="background-color: black">
+      <h5 class="text-light">Regarding Us</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-ming">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-ming">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-ming">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-ming">FAQs</a></li>
+        <li class="nav-item mb-2"><a th:href="@{/about}" class="nav-link p-0 text-ming">About Us</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3" style="background-color: black">
+      <h5 class="text-danger">More GPU's</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/" class="nav-link p-0 text-ming">Home</a></li>
+        <li class="nav-item mb-2"><a th:href="@{/1080ti}" class="nav-link p-0 text-ming">1080ti</a></li>
+        <li class="nav-item mb-2"><a th:href="@{/2080ti}" class="nav-link p-0 text-ming">2080ti</a></li>
+        <li class="nav-item mb-2"><a th:href="@{/3090ti}" class="nav-link p-0 text-ming">3090ti</a></li>
+        <li class="nav-item mb-2"><a th:href="@{/4090}" class="nav-link p-0 text-ming">4090</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3" style="background-color: black">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/copyright" class="nav-link p-0 text-ming">Source links for all wallpapers</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-ming">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-ming">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-ming">FAQs</a></li>
+
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+</body>
+
+
+</html>
